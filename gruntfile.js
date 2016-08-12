@@ -3,6 +3,12 @@ module.exports = function(grunt){
     grunt.initConfig({
         jshint:{
             all:['scripts1.js']
+        },
+        concat:{
+            dist: {
+                src:['scripts1.js','script1.js','script2.js','script3.js' ],
+                dest:'unidos.js'
+            }
         }
     });
     grunt.loadNpmTasks('grunt-contrib-jshint');
